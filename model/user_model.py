@@ -6,7 +6,7 @@ class user_model():
 
     def __init__(self):
         try:
-            self.con=mysql.connector.connect(host="localhost",user="root",database="lms_db")
+            self.con=mysql.connector.connect(host="147.93.152.216",user="shinewel_lms_api",database="shinewel_lms_api",password="shinewel_lms_api")
             self.con.autocommit=True
             self.cur=self.con.cursor(dictionary=True)
             print("Connected Sucessfully..")
